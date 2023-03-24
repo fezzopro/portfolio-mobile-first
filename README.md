@@ -86,8 +86,8 @@ Clone this repository to your desired folder:
 ```
   cd my-folder
   git clone https://github.com/fezzopro/portfolio-mobile-first.git
-  git checkout mobile-first-design
   cd portfolio-mobile-first
+  git checkout mobile-first-design
 
 ```
 
@@ -132,8 +132,6 @@ You can deploy this project using: github Page
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Complete Mobile version]**
-- [ ] **[Contact form]**
 - [ ] **[Desktop version]**
 - [ ] **[Application deploy]**
 - [ ] **[Evaluate accessibility]**
