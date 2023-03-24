@@ -1,5 +1,5 @@
 body {
-  background: #F7F7F9;
+  background: #f7f7f9;
   font-family: sans-serif, "Poppins";
   position: relative;
 }
@@ -14,7 +14,7 @@ a:hover {
 
 @media only screen and (min-width: 375px) {
   .wrapper {
-    background: #ffffff;
+    background: #fff;
     display: flex;
     flex-direction: column;
   }
@@ -32,8 +32,7 @@ a:hover {
     margin-left: 12px;
     width: 100px;
     padding: 10px 12px;
-    top: calc(50% - 40px/2);
-    padding: 10px 12px;
+    top: calc(50% - 40px / 2);
     position: relative;
   }
 
@@ -41,23 +40,23 @@ a:hover {
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
-    color: #6070FF;
+    color: #6070ff;
   }
 
   .burger {
     right: 24px;
     position: relative;
   }
-  
+
   .headline {
-    padding: 0px 24px;
+    padding: 0 24px;
   }
-  
+
   .headline h1 {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    color: #172B4D;
+    color: #172b4d;
   }
 
   .introduction {
@@ -67,13 +66,14 @@ a:hover {
     line-height: 150%;
     color: #344563;
   }
+
   .social-media {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
-    color: #7F8CFF;
+    color: #7f8cff;
   }
-  
+
   .social-media-icons ul {
     list-style: none;
     display: inline-flex;
@@ -87,7 +87,4 @@ a:hover {
   .social-icon {
     width: 20%;
   }
-
-
-  
 }
