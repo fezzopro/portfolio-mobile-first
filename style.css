@@ -219,14 +219,14 @@ a:hover {
     color: #6070ff;
   }
 
-  .btn-more:target ~ .btn-more{
-    color: #ffff;
-    background: #2230D2
-  }
-
   .btn-more:hover {
     color: #ffff;
-    background: #6070FF;
+    background: #6070ff;
+  }
+
+  .btn-more:target ~ .btn-more {
+    color: #ffff;
+    background: #2230d2;
   }
 
   .about-myself {
@@ -268,11 +268,7 @@ a:hover {
     justify-content: space-between;
   }
 
-  .language-item{
-    justify-content: flex-start;
-  }
-
-  .language-item p{
+  .language-item p {
     padding-left: 16px;
   }
 
@@ -288,7 +284,6 @@ a:hover {
     align-items: center;
   }
 
-
   .language-item {
     display: flex;
     list-style-type: none;
@@ -299,6 +294,7 @@ a:hover {
     margin: 12px initial;
     padding: 9px;
     align-items: center;
+    justify-content: flex-start;
   }
 
   .allow-down {
