@@ -86,8 +86,8 @@ Clone this repository to your desired folder:
 ```
   cd my-folder
   git clone https://github.com/fezzopro/portfolio-mobile-first.git
-  git checkout mobile-first-design
   cd portfolio-mobile-first
+  git checkout mobile-first-design
 
 ```
 
