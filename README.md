@@ -132,8 +132,6 @@ You can deploy this project using: github Page
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Complete Mobile version]**
-- [ ] **[Contact form]**
 - [ ] **[Desktop version]**
 - [ ] **[Application deploy]**
 - [ ] **[Evaluate accessibility]**
