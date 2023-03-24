@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>Hello-Microverse</b></h3>
+  <h3><b>Portfolio Mobile First</b></h3>
 
 </div>
 
@@ -30,11 +30,11 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello-Microverse Project] <a name="about-project"></a>
+# 📖 [Portfolio Mobile First Project] <a name="about-project"></a>
 
-> This is a microverse project that full stack students have to do on the second day of the first week.
+> This is a microverse project that full stack students have to do on the third and fourth day of the first week.
 
-**[Hello-Microverse]** is a project that get students fimilia with setting up linters for better consistence within their code base across the entire team.
+**[Portfolio Mobile First]** is a project that get students fimilia with setting up linters for better consistence within their code base across the entire team. Learn best practices of HTML & CSS
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -57,7 +57,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://github.com/fezzopro/Hello-Microverse)
+- [Live Demo Link](https://github.com/fezzopro/portfolio-mobile-first)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,9 +86,9 @@ Clone this repository to your desired folder:
 
 ```
   cd my-folder
-  git clone https://github.com/fezzopro/Hello-Microverse.git
-  git checkout initialize-helloWorld-project
-  cd Hello-Microverse
+  git clone https://github.com/fezzopro/portfolio-mobile-first.git
+  git checkout mobile-first-design
+  cd portfolio-mobile-first
 
 ```
 
@@ -99,17 +99,19 @@ Install this project with:
 
 ### Usage
 
-To run the project, execute the following command:
+- Open index.html in your fevorite browser.
+- Open developer options and choose responsive Dimension.
+- Choose devise with minimum width of 375px.
 
 
 ### Run tests
 
-To run tests, run the following command:
+This project has no test
 
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using: github Page
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -134,9 +136,15 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **[Blog]**
-- [ ] **[Contact_Us]**
-- [ ] **[recommendation]**
+- [ ] **[Complete Mobile version]**
+- [ ] **[Contact form]**
+- [ ] **[Desktop version]**
+- [ ] **[Application deploy]**
+- [ ] **[Evaluate accessibility]**
+- [ ] **[Mobile menu]**
+- [ ] **[Details modal]**
+- [ ] **[Validate contact form]**
+- [ ] **[Preserve data in the browser]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -146,7 +154,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/fezzopro/Hello-Microverse/issues).
+Feel free to check the [issues page](https://github.com/fezzopro/portfolio-mobile-first/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
