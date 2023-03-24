@@ -101,4 +101,238 @@ a:hover {
   .social-icon {
     width: 20%;
   }
+
+  .work {
+    padding: 0 24px;
+  }
+
+  .card {
+    margin-top: 114px;
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    padding-bottom: 14px;
+  }
+
+  .card img {
+    padding: 16px 16px 0 16px;
+  }
+
+  .details {
+    padding: 0 16px 12px 16px;
+  }
+
+  .project-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 138%;
+    color: #172b4d;
+    margin-top: 0;
+  }
+
+  .project-meta {
+    display: flex;
+    width: 236px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: initial;
+    list-style-type: none;
+  }
+
+  .project-meta :first-child {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #344563;
+  }
+
+  .role,
+  .year {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    color: #7a869a;
+  }
+
+  .circle {
+    height: 8px;
+    width: 8px;
+    background-color: #c1c7d0;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+  .project-description {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .stacks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: inherit;
+    width: 203px;
+    height: 24px;
+    gap: 8px;
+    list-style-type: none;
+    padding-left: initial;
+  }
+
+  .stacks li {
+    padding: 4px 12px;
+    background: #ebebff;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  .more {
+    width: 295px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-more {
+    padding: 12px;
+    width: fit-content;
+    height: 48px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    background-color: #fff;
+    border: 1px solid #6070ff;
+    color: #6070ff;
+  }
+
+  .about-myself {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top-right-radius: 100px;
+    margin: 114px 24px 0;
+    padding: 0 16px 12px 16px;
+  }
+
+  .about-myself h1 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #172b4d;
+    margin-top: 114px;
+    margin-bottom: initial;
+  }
+
+  .margin-bottom-0 {
+    margin-bottom: 0;
+  }
+
+  .border-bottom {
+    border-bottom: 1px solid #dfe1e6;
+  }
+
+  .languages ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 113.85px;
+    padding: 0;
+    gap: 12px;
+  }
+
+  .languages ul li {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000;
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    padding: 9px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .language-item {
+    display: flex;
+    list-style-type: none;
+    width: auto;
+    height: 66.72px;
+    background: #f7f7f9;
+    border-radius: 8px;
+    margin: 12px initial;
+    padding: 9px;
+    align-items: center;
+  }
+
+  .allow-down {
+    width: 36px;
+    height: 18px;
+    padding-right: 10px;
+  }
+
+  .contact-me {
+    background-color: #6070ff;
+    background-image: url("assets/images/Svg/contact-form-shapes-mobile.svg");
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 0;
+    margin-top: 114px;
+    padding: 0 16px 12px 16px;
+    color: #ffff;
+    background-position-x: right;
+  }
+
+  .contact-me h1 {
+    color: #ffff;
+    text-align: center;
+    padding-top: 75px;
+  }
+
+  .contact-me p {
+    text-align: center;
+    color: #ebebff;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .form {
+    gap: 12px;
+    display: grid;
+  }
+
+  .form input {
+    height: 48px;
+  }
+
+  .form textarea {
+    padding-top: 15px;
+  }
+
+  .form input,
+  .form textarea {
+    width: 327px;
+    border-radius: 5px;
+    border: 1px solid #cfd8dc;
+    color: #172b4d;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    padding-left: 16px;
+  }
 }
