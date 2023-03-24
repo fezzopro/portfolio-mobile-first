@@ -50,6 +50,8 @@ a:hover {
 
   .headline {
     padding: 0 24px;
+    background-image: url("assets/images/Svg/header-shapes-mobile.svg");
+    background-repeat: no-repeat;
   }
 
   .headline h1 {
