@@ -57,7 +57,7 @@ This project uses the following stacks:
 
 
 
-- [Live Demo Link](https://github.com/fezzopro/portfolio-mobile-first)
+- No live demo at the moment
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
