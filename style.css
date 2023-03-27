@@ -179,6 +179,7 @@ a:hover {
     /* display: flex; */
     /* flex-direction: row; */
     /* align-items: center; */
+    display: inline-block;
     padding: inherit;
     width: 203px;
     height: 24px;
@@ -196,6 +197,7 @@ a:hover {
     line-height: 16px;
     letter-spacing: 0.03em;
     color: #6070ff;
+    float: left;
   }
 
   .more {
