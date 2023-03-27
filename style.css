@@ -176,9 +176,9 @@ a:hover {
   }
 
   .stacks {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
     padding: inherit;
     width: 203px;
     height: 24px;
