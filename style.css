@@ -189,6 +189,7 @@ a:hover {
   }
 
   .stacks li {
+    margin: 0 5px;
     padding: 4px 12px;
     background: #ebebff;
     border-radius: 8px;
