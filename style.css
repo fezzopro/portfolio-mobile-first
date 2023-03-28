@@ -61,6 +61,7 @@ a:hover {
     border-bottom-left-radius: 50px;
     background-color: #ffff;
     margin-top: 60px;
+    background-position-x: right;
   }
 
   .headline h1,
