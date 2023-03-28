@@ -35,7 +35,6 @@ a:hover {
     margin-left: 12px;
     width: 100px;
     padding: 10px 12px;
-    /* top: calc(50% - 40px / 2); */
     position: relative;
   }
 
@@ -238,7 +237,7 @@ a:hover {
     flex-direction: column;
     gap: 12px;
     border-top-right-radius: 100px;
-    margin: 114px 0px 0;
+    margin: 114px 0 0;
     padding: 0 24px 100px;
   }
 
