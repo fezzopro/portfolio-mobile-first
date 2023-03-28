@@ -20,7 +20,7 @@ a:hover {
   }
 
   .top-toolbar {
-    height: 8%;
+    height: 60px;
     align-items: center;
     display: flex;
     flex: 1 1 auto;
@@ -57,11 +57,11 @@ a:hover {
     background-repeat: no-repeat;
     gap: 12px;
     display: flex;
-    /* flex: 1 1 auto; */
+    flex: 1 1 auto;
     flex-direction: column;
     border-bottom-left-radius: 50px;
     background-color: #ffff;
-    margin-top: 15%;
+    margin-top: 60px;
   }
 
   .headline h1,
