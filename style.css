@@ -20,12 +20,14 @@ a:hover {
   }
 
   .top-toolbar {
-    height: 48px;
+    height: 60px;
     align-items: center;
     display: flex;
     flex: 1 1 auto;
     justify-content: space-between;
     background: #ffff;
+    position: fixed;
+    width: 100%;
   }
 
   .logo-placeholder {
@@ -33,7 +35,6 @@ a:hover {
     margin-left: 12px;
     width: 100px;
     padding: 10px 12px;
-    top: calc(50% - 40px / 2);
     position: relative;
   }
 
@@ -59,6 +60,8 @@ a:hover {
     flex-direction: column;
     border-bottom-left-radius: 50px;
     background-color: #ffff;
+    margin-top: 60px;
+    background-position-x: right;
   }
 
   .headline h1,
@@ -80,7 +83,7 @@ a:hover {
     margin-bottom: 0;
   }
 
-  .social-media {
+  .lets-connect {
     font-weight: 500;
     font-size: 16px;
     line-height: 150%;
@@ -88,7 +91,7 @@ a:hover {
     width: fit-content;
   }
 
-  .social-media-icons {
+  .social-media-connect-icons {
     list-style: none;
     display: inline-flex;
     justify-content: space-between;
@@ -224,9 +227,20 @@ a:hover {
     background: #6070ff;
   }
 
-  .btn-more:target ~ .btn-more {
+  .btn-more:target {
     color: #ffff;
     background: #2230d2;
+  }
+
+  .btn-more:active {
+    color: #ffff;
+    background: #2230d2;
+  }
+
+  .btn-more-disable {
+    color: #5e6c84;
+    background: #ffff;
+    border-color: #5e6c84;
   }
 
   .about-myself {
@@ -235,8 +249,8 @@ a:hover {
     flex-direction: column;
     gap: 12px;
     border-top-right-radius: 100px;
-    margin: 114px 24px 0;
-    padding: 0 16px 12px 16px;
+    margin: 114px 0 0;
+    padding: 0 24px 100px;
   }
 
   .about-myself h2 {
@@ -312,8 +326,8 @@ a:hover {
     gap: 12px;
     border-top-left-radius: 100px;
     border-bottom-left-radius: 0;
-    margin-top: 114px;
-    padding: 0 16px 12px 16px;
+    margin-top: -78px;
+    padding: 0 24px 16px;
     color: #ffff;
     background-position-x: right;
   }
@@ -333,7 +347,8 @@ a:hover {
 
   .form {
     gap: 12px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
 
   .form input {

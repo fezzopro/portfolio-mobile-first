@@ -125,6 +125,10 @@ You can deploy this project using: github Page
 - GitHub: [@githubhandle](https://github.com/fezzopro)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kamana-felix-9b6731105/)
 
+👤 **Lethabo Motloung**
+
+- GitHub: [@githubhandle](https://github.com/LethaboMot)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
