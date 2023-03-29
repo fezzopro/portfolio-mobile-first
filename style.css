@@ -232,6 +232,17 @@ a:hover {
     background: #2230d2;
   }
 
+  .btn-more:active ~ .btn-more {
+    color: #ffff;
+    background: #2230d2;
+  }
+
+  .btn-more-disable {
+    color: #5e6c84;
+    background: #ffff;
+    border-color: #5e6c84;
+  }
+
   .about-myself {
     background-color: #fff;
     display: flex;
