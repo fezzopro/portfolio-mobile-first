@@ -347,7 +347,8 @@ a:hover {
 
   .form {
     gap: 12px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
   }
 
   .form input {
