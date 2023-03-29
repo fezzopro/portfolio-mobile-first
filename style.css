@@ -227,12 +227,12 @@ a:hover {
     background: #6070ff;
   }
 
-  .btn-more:target ~ .btn-more {
+  .btn-more:target {
     color: #ffff;
     background: #2230d2;
   }
 
-  .btn-more:active ~ .btn-more {
+  .btn-more:active {
     color: #ffff;
     background: #2230d2;
   }
