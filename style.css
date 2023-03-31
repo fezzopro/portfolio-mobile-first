@@ -13,12 +13,12 @@ a:hover {
   cursor: pointer;
 }
 
-@media only screen and (min-width: 375px) {
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
+@media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
     align-items: center;
@@ -419,6 +419,8 @@ a:hover {
 
   .contact-me {
     padding: 0 29.35rem;
+    background-image: url('/assets/images/Svg/big_contact_form_background_shapes.svg');
+    background-size: contain;
   }
 
   .nav-elements img {
@@ -443,7 +445,7 @@ a:hover {
   .headline h1,
   .headline h2 {
     line-height: 125%;
-    padding-top: 18rem;
+    padding-top: 7rem;
   }
 
   .introduction {
@@ -558,5 +560,19 @@ a:hover {
   .about-myself-intro {
     display: flex;
     flex-direction: column;
+  }
+
+  .form {
+    padding: 0 2rem;
+    margin-bottom: 7.938rem;
+  }
+
+  .form textarea {
+    padding: 15px;
+  }
+
+  .form div {
+    width: auto;
+    align-items: center;
   }
 }
