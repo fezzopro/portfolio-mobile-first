@@ -447,11 +447,13 @@ a:hover {
   .headline h2 {
     line-height: 125%;
     padding-top: 7rem;
+    animation: 1s ease-out 0s 1 slideInFromLeft;
   }
 
   .introduction {
     font-size: 1.5rem;
     height: fit-content;
+    animation: 1s ease-out 0s 1 slideInFromRight;
   }
 
   .card {
@@ -575,5 +577,23 @@ a:hover {
   .form div {
     width: auto;
     align-items: center;
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
