@@ -412,14 +412,14 @@ a:hover {
 /* Desktop version */
 @media only screen and (min-width: 768px) {
   .headline {
-    background-image: url('/assets/images/Svg/Header_bg@2x.svg');
+    background-image: url('assets/images/Svg/Header_bg@2x.svg');
     background-size: contain;
     padding: 0 13.35rem;
   }
 
   .contact-me {
     padding: 0 29.35rem;
-    background-image: url('/assets/images/Svg/big_contact_form_background_shapes.svg');
+    background-image: url('assets/images/Svg/big_contact_form_background_shapes.svg');
     background-size: contain;
   }
 
