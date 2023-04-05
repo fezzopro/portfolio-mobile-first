@@ -4,6 +4,6 @@ Page titles -  Changed from a general tittle of the page to a more specific one,
 
 Image text alternatives** (<img alt="alt text">) - Modified image text alternatives for screen readers.
 
-Interaction - No Issues found
+Interaction - No Issues found.
 
-Moving content - No Issues found
+Moving content - No Issues found.
