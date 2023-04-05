@@ -14,3 +14,5 @@ Moving content - No Issues found.
 
 * Page Titles - No Issue Found
 * Color contrast - No Issue Found
+* Multimedia - No Issue Found
+* The basic structure of the page - No Issue Found
