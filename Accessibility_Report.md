@@ -7,3 +7,8 @@ Image text alternatives** (<img alt="alt text">) - Modified image text alternati
 Interaction - No Issues found.
 
 Moving content - No Issues found.
+
+### 
+
+* Page Titles - No Issue Found
+* Color contrast - No Issue Found
