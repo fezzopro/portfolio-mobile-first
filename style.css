@@ -18,6 +18,16 @@ a:hover {
   flex-direction: column;
 }
 
+.about-myself-intro {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form textarea {
+  font-family: sans-serif, "Poppins";
+}
+
 @media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
@@ -88,6 +98,7 @@ a:hover {
     font-size: 18px;
     line-height: 150%;
     color: #344563;
+    margin-bottom: 3rem;
   }
 
   .lets-connect {
@@ -287,6 +298,10 @@ a:hover {
 
   .margin-bottom-0 {
     margin-bottom: 0;
+  }
+
+  .mb-revert {
+    margin-bottom: revert;
   }
 
   .border-bottom {
@@ -558,11 +573,6 @@ a:hover {
     flex-direction: column;
     height: fit-content;
     width: 7.625rem;
-  }
-
-  .about-myself-intro {
-    display: flex;
-    flex-direction: column;
   }
 
   .form {
