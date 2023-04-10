@@ -35,6 +35,8 @@
 
 This is a microverse project that full stack students have to do on the third and fourth day of the first week.
 
+The video presentation can be found **[HERE](https://www.loom.com/share/d63f478570ae4c66bad9dc6bada53619)**
+
 **[Portfolio Mobile First]** is a project that get students fimilia with setting up linters for better consistence within their code base across the entire team. Learn best practices of HTML & CSS
 
 ## 🛠 Built With <a name="built-with"></a>
