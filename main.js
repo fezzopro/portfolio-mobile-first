@@ -20,17 +20,17 @@ humbergMenu.addEventListener('click', () => {
   humbergMenu.classList.toggle('close-icon');
   sections[0].classList.toggle('left-navigation-backgound');
 
-  for (let i = 1; i < sections.length; i++) {
-    sections[i].classList.toggle('hide');
+  for (const section of sections) {
+    section.classList.toggle('hide');
+  }
+  
+  for (const link of mobileMenulinks) {
+    link.addEventListener('click', () => {
+      mobilePopUpMenue.classList.toggle('hide');
+      topToolbar.classList.toggle('menu-background');
+      humbergMenu.classList.toggle('close-icon');
+      sections[0].classList.toggle('left-navigation-backgound');
+      logoPlaceHolder.classList.toggle('hide');
+    });
   }
 });
-
-for (const link of mobileMenulinks) {
-  link.addEventListener('click', () => {
-    mobilePopUpMenue.classList.toggle('hide');
-    topToolbar.classList.toggle('menu-background');
-    humbergMenu.classList.toggle('close-icon');
-    sections[0].classList.toggle('left-navigation-backgound');
-    logoPlaceHolder.classList.toggle('hide');
-  });
-}
