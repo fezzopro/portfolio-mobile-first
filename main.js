@@ -17,7 +17,7 @@ const toggleMenu = () => {
   mobilePopUpMenue.classList.toggle('hide');
   topToolbar.classList.toggle('menu-background');
   humbergMenu.classList.toggle('close-icon');
-  sections.forEach(section => {
+  sections.forEach((section) => {
     section.classList.toggle('hide');
   });
   sections[0].classList.toggle('left-navigation-backgound');
@@ -25,6 +25,6 @@ const toggleMenu = () => {
 };
 
 humbergMenu.addEventListener('click', toggleMenu);
-mobileMenulinks.forEach(link => {
+mobileMenulinks.forEach((link) => {
   link.addEventListener('click', toggleMenu);
 });
