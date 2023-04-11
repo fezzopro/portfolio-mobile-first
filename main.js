@@ -19,19 +19,18 @@ humbergMenu.addEventListener('click', () => {
   topToolbar.classList.toggle('menu-background');
   humbergMenu.classList.toggle('close-icon');
   sections[0].classList.toggle('left-navigation-backgound');
-  
-  for (let i = 1; i< sections.length; i ++) {
-      sections[i].classList.toggle('hide');
+
+  for (let i = 1; i < sections.length; i++) {
+    sections[i].classList.toggle('hide');
   }
 });
 
 for (const link of mobileMenulinks) {
-  link.addEventListener('click', ()=>{
+  link.addEventListener('click', () => {
     mobilePopUpMenue.classList.toggle('hide');
     topToolbar.classList.toggle('menu-background');
     humbergMenu.classList.toggle('close-icon');
     sections[0].classList.toggle('left-navigation-backgound');
     logoPlaceHolder.classList.toggle('hide');
-  })
-}  
-
+  });
+}
