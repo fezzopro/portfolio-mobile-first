@@ -355,10 +355,6 @@ a:hover {
     margin-bottom: 0;
   }
 
-  .mb-revert {
-    margin-bottom: revert;
-  }
-
   .border-bottom {
     border-bottom: 1px solid #dfe1e6;
   }
@@ -398,7 +394,6 @@ a:hover {
     height: 66.72px;
     background: #f7f7f9;
     border-radius: 8px;
-    margin: 12px initial;
     padding: 9px;
     align-items: center;
     justify-content: flex-start;
@@ -522,7 +517,6 @@ a:hover {
 
   .introduction {
     font-size: 1.5rem;
-    height: fit-content;
     animation: 1s ease-out 0s 1 slideInFromRight;
   }
 
@@ -626,7 +620,6 @@ a:hover {
 
   .languages ul ul li {
     flex-direction: column;
-    height: fit-content;
     width: 7.625rem;
   }
 
