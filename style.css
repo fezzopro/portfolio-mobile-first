@@ -19,7 +19,6 @@ a:hover {
 
 .left-navigation {
   background-color: #6070ff;
-  height: calc(100vh - 5.5rem / 2);
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
@@ -27,7 +26,7 @@ a:hover {
   height: 100%;
   position: absolute;
   z-index: 100;
-  opacity: .9
+  opacity: 0.9;
 }
 
 .left-navigation-backgound {
@@ -40,26 +39,23 @@ a:hover {
   list-style: none;
 }
 
-.left-navigation ul li a  {
+.left-navigation ul li a {
   color: #ffff;
 }
 
 .menu-background {
-  background-color: #6070FF !important;
-  opacity: .9;
+  background-color: #6070ff !important;
+  opacity: 0.9;
 }
 
 .close-icon {
   content: url('assets/images/Svg/close.svg');
 }
 
-.left-navigation {
-  height: calc(100vh - 5.5rem / 2);
-}
-
 .pt-3 {
   padding-top: 3rem;
 }
+
 .pt-3-5 {
   padding-top: 3.5rem;
 }
