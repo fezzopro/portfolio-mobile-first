@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kamana Felix's Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
 </head>
 
 <body>
@@ -17,18 +18,18 @@
       </div>
       <nav>
         <div class="icons nav-elements burger">
-          <img src="assets/images/Icons/Union.png" alt="Menu Icon">
+          <img class="burger-menu" src="assets/images/Icons/Union.png" alt="Menu Icon">
           <ul>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li ><a class="menu-link" href="#work">Portfolio</a></li>
+            <li ><a class="menu-link" href="#about-myself">About</a></li>
+            <li ><a class="menu-link" href="#contact-me">Contact</a></li>
           </ul>
         </div>
       </nav>
     </header>
 
     <!-- Headline Section -->
-    <section class="headline">
+    <section class="headline" id="headline">
       <div>
         <h1>I’m KAMANA. <br>Glad to see you!</h1>
       <p class="introduction">
@@ -60,7 +61,7 @@
     </section>
 
     <!-- Work Section -->
-    <section class="work">
+    <section class="work" id="work">
       <div class="card work-1">
         <img src="assets/images/Svg/project1.svg" alt="Project Snapshot 1" >
         <div class="left-block details">
@@ -172,7 +173,7 @@
     </section>
 
     <!-- About me Section -->
-    <section class="about-myself">
+    <section class="about-myself" id="about-myself">
       <div class="about-myself-intro">
         <h2>About Myself</h2>
         <p class="introduction">
@@ -241,7 +242,7 @@
     </section>
 
     <!-- Contact Me Section -->
-    <section class="contact-me headline">
+    <section class="contact-me headline" id="contact-me">
       <h2>Contact me</h2>
       <p class="introduction margin-bottom-0">
         If you have an application you are interested in developing, 
