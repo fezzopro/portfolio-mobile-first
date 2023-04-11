@@ -1,40 +1,37 @@
-let humbergMenu = document.querySelector('.burger');
+const humbergMenu = document.querySelector('.burger-menu');
+const mobilePopUpMenue = document.createElement('div');
+mobilePopUpMenue.className = 'left-navigation hide mt-3-5';
+const sections = document.getElementsByTagName('section');
+const wrapper = document.querySelector('.wrapper');
+const topToolbar = document.querySelector('.top-toolbar');
 
-const mobileMenu = document.querySelector('.burger > ul');
-const logo = document.querySelector('.logo-placeholder');
-const burger = document.querySelector('.burger');
-const text = document.querySelectorAll('.menu-icon');
+const mobileMenu = document.querySelector('.burger  ul');
+const mobileMenulinks = document.querySelectorAll('.menu-link');
+const logoPlaceHolder = document.querySelector('.logo-placeholder a');
 
+mobilePopUpMenue.appendChild(mobileMenu);
+wrapper.appendChild(mobilePopUpMenue);
 
-humbergMenu.addEventListener('click', ()=>{
-  mobileMenu.style.display ='flex';
-  mobileMenu.style['flex-direction'] = 'column';
-  mobileMenu.style['list-style'] = 'none';
-  mobileMenu.style['gap'] = '12px';
-  mobileMenu.style['font-weight'] = '600';
-  mobileMenu.style['font-size'] = '32px';
-  mobileMenu.style['line-height'] = '44px';
+humbergMenu.addEventListener('click', () => {
 
-  logo.style['display'] = 'none';
+  logoPlaceHolder.classList.toggle('hide');
+  mobilePopUpMenue.classList.toggle('hide');
+  topToolbar.classList.toggle('menu-background');
+  humbergMenu.classList.toggle('close-icon');
+  sections[0].classList.toggle('left-navigation-backgound');
   
-  humbergMenu.style['position'] = 'fixed';
-  humbergMenu.style['background'] = 'white';
-  humbergMenu.style['padding-bottom'] = '100px';
-  humbergMenu.style['width'] = '-webkit-fill-available';
-  humbergMenu.style['height'] = '100%';
-  for (let i = 0; i < text.length; i++) {
-    text[i].style.color = 'white';
-    text[i].addEventListener('click',function() {
-      humbergMenu.style.display= 'none';
-      console.log('link clicked');
-          });
+  for (let i = 1; i< sections.length; i ++) {
+      sections[i].classList.toggle('hide');
   }
-  burger.style['right'] = '0';
-
-  humbergMenu.style.background = '#6070FF' ;
-  text.style['color'] = 'white';
-  humbergMenu.style.opacity = '90%';
-  humbergMenu.style.blend = 'Multiply';
- 
 });
+
+for (const link of mobileMenulinks) {
+  link.addEventListener('click', ()=>{
+    mobilePopUpMenue.classList.toggle('hide');
+    topToolbar.classList.toggle('menu-background');
+    humbergMenu.classList.toggle('close-icon');
+    sections[0].classList.toggle('left-navigation-backgound');
+    logoPlaceHolder.classList.toggle('hide');
+  })
+}  
 
