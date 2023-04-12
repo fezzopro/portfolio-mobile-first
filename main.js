@@ -1,3 +1,5 @@
+const screenWidth = document.querySelector('body').style.width;
+
 // Mobile Menu Start
 const humbergMenu = document.querySelector('.burger-menu');
 const mobilePopUpMenue = document.createElement('div');
@@ -12,17 +14,20 @@ const logoPlaceHolder = document.querySelector('.logo-placeholder a');
 
 mobilePopUpMenue.appendChild(mobileMenu);
 wrapper.appendChild(mobilePopUpMenue);
+const createBlurBackground = () => {
+  sections.forEach((section) => {
+    section.classList.toggle('hide');
+  });
+  sections[0].classList.toggle('left-navigation-backgound');
+  sections[0].classList.toggle('hide');
+};
 
 const toggleMenu = () => {
   logoPlaceHolder.classList.toggle('hide');
   mobilePopUpMenue.classList.toggle('hide');
   topToolbar.classList.toggle('menu-background');
   humbergMenu.classList.toggle('close-icon');
-  sections.forEach((section) => {
-    section.classList.toggle('hide');
-  });
-  sections[0].classList.toggle('left-navigation-backgound');
-  sections[0].classList.toggle('hide');
+  createBlurBackground();
 };
 
 humbergMenu.addEventListener('click', toggleMenu);
@@ -31,5 +36,86 @@ mobileMenulinks.forEach((link) => {
 });
 // Mobile Menu End
 
-// Project pup up Menu Start
-// Project pup up Menu Start
+// Project object
+
+const projectArray = [
+  {
+    title: "Tonic",
+    projectMeta: ['CANOPY', '<span class="circle"></span>', 'Back End Dev', '<span class="circle"></span>', '2015'],
+    projectImage: {
+      desktop: "assets/images/Svg/project1.svg",
+      smallDevice: "assets/images/project1.png",
+      model: "assets/images/Svg/project1.svg",
+    },
+    projectDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    projectStacks: ["html", "css", "javascript"],
+  },
+  {
+    title: "Multi-Post Stories",
+    projectMeta: ['FACEBOOK', '<span class="circle"></span>', 'Back End Dev', '<span class="circle"></span>', '2015'],
+    projectImage:  {
+    desktop: "assets/images/Svg/project2.svg",
+    smallDevice: "assets/images/project2.png",
+    model: "assets/images/Svg/project2.svg",
+  },
+    projectDescription: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
+    projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
+  },
+  {
+    title: "Facebook 360",
+    projectMeta: ['FACEBOOK', '<span class="circle"></span>', 'Back End Dev', '<span class="circle"></span>', '2015'],
+    projectImage:  {
+    desktop: "assets/images/Svg/project3.svg",
+    smallDevice: "assets/images/project3.png",
+    model: "assets/images/Svg/project3.svg",
+  },
+    projectDescription: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+    projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
+  },
+  {
+    title: "Uber Navigation",
+    projectMeta: ['Uber', '<span class="circle"></span>', 'Lead Developer', '<span class="circle"></span>', '2015'],
+    projectImage:  {
+    desktop: "assets/images/Svg/project4.svg",
+    smallDevice: "assets/images/project4.png",
+    model: "assets/images/projects/project1-model.svg",
+  },
+    projectDescription: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
+    projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
+  },
+];
+
+// Project Details Model Start
+const modelDiv = document.querySelector('.models');
+const seeDetailsButtons = document.querySelectorAll('.see-project');
+const divWrapper = document.querySelector('.wrapper');
+const closeModel = document.querySelector('.close-model');
+
+const createModel = () => {
+  // codes to create model goes here
+  const project = document.activeElement.id.split('-')[1];
+  const modelProjectTitle = document.querySelector('.model-project-header h2');
+  const modelProjectDescr = document.querySelector('.model-project-description');
+  const modelProjectImage = document.querySelector('.model-image');
+  const modelProjectStack = document.querySelector('.model-technologies');
+  const modelProjectMeta  = document.querySelector('.project-meta-model');
+  console.log(projectArray[project-1], screenWidth);
+  modelProjectTitle.textContent = projectArray[project-1].title;
+  modelProjectTitle.modelProjectDescr = projectArray[project-1].projectDescription;
+  modelProjectImage.src = projectArray[project-1].projectImage.model;
+  // Display Model
+  toggleModel();
+};
+
+const toggleModel = () => {
+  modelDiv.classList.toggle('hide');
+  divWrapper.classList.toggle('hide');
+}
+
+seeDetailsButtons.forEach((button) => {
+  button.addEventListener('click', createModel);
+});
+
+closeModel.addEventListener('click', toggleModel);
+
+// Project Details Model End
