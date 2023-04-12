@@ -47,7 +47,7 @@ const projectArray = [
       smallDevice: "assets/images/project1.png",
       model: "assets/images/Svg/project1.svg",
     },
-    projectDescription: "A daily selection of privately personalized reads; no accounts or sign-ups required.",
+    projectDescription: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     projectStacks: ["html", "css", "javascript"],
   },
   {
@@ -101,7 +101,7 @@ const createModel = () => {
   const modelProjectMeta  = document.querySelector('.project-meta-model');
   console.log(projectArray[project-1], screenWidth);
   modelProjectTitle.textContent = projectArray[project-1].title;
-  modelProjectTitle.modelProjectDescr = projectArray[project-1].projectDescription;
+  modelProjectDescr.textContent = projectArray[project-1].projectDescription;
   modelProjectImage.src = projectArray[project-1].projectImage.model;
   // Display Model
   toggleModel();
