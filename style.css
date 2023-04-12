@@ -83,6 +83,49 @@ a:hover {
   font-family: sans-serif, "Poppins";
 }
 
+.models {
+  padding-top: 2rem !important;
+}
+
+.model-project {
+  margin-top: 0 !important;
+  padding-top: 2rem;
+}
+
+.model-top h2 {
+  padding-left: 0;
+}
+
+.model-buttons {
+  gap: 1rem;
+  padding-left: 0 !important;
+}
+
+.model-buttons button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.model-buttons button > span > img {
+  padding: 5px 18px 0 6px;
+}
+
+.model-images {
+  display: contents;
+}
+
+.line {
+  display: block;
+  border-top: 1px solid #EBECF0;
+}
+
+.model-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 @media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
@@ -291,7 +334,6 @@ a:hover {
   }
 
   .more {
-    width: 295px;
     height: 72px;
     display: flex;
     align-items: center;
@@ -457,6 +499,18 @@ a:hover {
     line-height: 20px;
     padding-left: 16px;
   }
+
+  .model-buttons > a > button {
+    padding: 0 6px;
+  }
+
+  .live-icon {
+    padding-right: 0 !important;
+  }
+
+  .model-image {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 425px) {
@@ -621,6 +675,7 @@ a:hover {
   .languages ul ul li {
     flex-direction: column;
     width: 7.625rem;
+    height: auto;
   }
 
   .form {
@@ -635,6 +690,34 @@ a:hover {
   .form div {
     width: auto;
     align-items: center;
+  }
+
+  .model-project {
+    flex-direction: column;
+  }
+
+  .model-top, 
+  .model-image-technologies, 
+  .project-title {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .model-details {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project-meta-model {
+    margin: 0;
+  }
+
+  .line {
+    padding: 0;
+  }
+
+  .model-buttons {
+    padding-top: 0;
   }
 }
 
