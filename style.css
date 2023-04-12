@@ -505,6 +505,11 @@ a:hover {
     padding-left: 16px;
   }
 
+  .model-buttons {
+    gap: 10px;
+    padding-right: 0;
+  }
+
   .model-buttons > a > button {
     padding: 0 6px;
   }
@@ -530,6 +535,10 @@ a:hover {
   .headline h1,
   .headline h2 {
     padding-top: 7.125rem;
+  }
+
+  .model-buttons {
+    gap: 1rem;
   }
 }
 
