@@ -53,33 +53,33 @@ const projectArray = [
   {
     title: "Multi-Post Stories",
     projectMeta: ['FACEBOOK', '<span class="circle"></span>', 'Back End Dev', '<span class="circle"></span>', '2015'],
-    projectImage:  {
-    desktop: "assets/images/Svg/project2.svg",
-    smallDevice: "assets/images/project2.png",
-    model: "assets/images/Svg/project2.svg",
-  },
+    projectImage: {
+      desktop: "assets/images/Svg/project2.svg",
+      smallDevice: "assets/images/project2.png",
+      model: "assets/images/Svg/project2.svg",
+    },
     projectDescription: "Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.",
     projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
   {
     title: "Facebook 360",
     projectMeta: ['FACEBOOK', '<span class="circle"></span>', 'Back End Dev', '<span class="circle"></span>', '2015'],
-    projectImage:  {
-    desktop: "assets/images/Svg/project3.svg",
-    smallDevice: "assets/images/project3.png",
-    model: "assets/images/Svg/project3.svg",
-  },
+    projectImage: {
+      desktop: "assets/images/Svg/project3.svg",
+      smallDevice: "assets/images/project3.png",
+      model: "assets/images/Svg/project3.svg",
+    },
     projectDescription: "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
   {
     title: "Uber Navigation",
     projectMeta: ['Uber', '<span class="circle"></span>', 'Lead Developer', '<span class="circle"></span>', '2015'],
-    projectImage:  {
-    desktop: "assets/images/Svg/project4.svg",
-    smallDevice: "assets/images/project4.png",
-    model: "assets/images/projects/project1-model.svg",
-  },
+    projectImage: {
+      desktop: "assets/images/Svg/project4.svg",
+      smallDevice: "assets/images/project4.png",
+      model: "assets/images/projects/project1-model.svg",
+    },
     projectDescription: "A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.",
     projectStacks: ['html', 'Ruby on rails', 'css', 'javascript'],
   },
@@ -98,18 +98,18 @@ const createModel = () => {
   const modelProjectDescr = document.querySelector('.model-project-description');
   const modelProjectImage = document.querySelector('.model-image');
   const modelProjectStack = document.querySelector('.model-technologies');
-  const modelProjectMeta  = document.querySelector('.project-meta-model');
-  console.log(projectArray[project-1], screenWidth);
-  modelProjectTitle.textContent = projectArray[project-1].title;
-  modelProjectDescr.textContent = projectArray[project-1].projectDescription;
-  modelProjectImage.src = projectArray[project-1].projectImage.model;
+  const modelProjectMeta = document.querySelector('.project-meta-model');
+  modelProjectTitle.textContent = projectArray[project - 1].title;
+  modelProjectDescr.textContent = projectArray[project - 1].projectDescription;
+  modelProjectImage.src = projectArray[project - 1].projectImage.model;
   // Display Model
   toggleModel();
 };
 
 const toggleModel = () => {
   modelDiv.classList.toggle('hide');
-  divWrapper.classList.toggle('hide');
+  topToolbar.classList.toggle('hide');
+  createBlurBackground();
 }
 
 seeDetailsButtons.forEach((button) => {
