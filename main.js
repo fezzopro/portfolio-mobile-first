@@ -8,7 +8,7 @@ const sections = document.querySelectorAll('section');
 const wrapper = document.querySelector('.wrapper');
 const topToolbar = document.querySelector('.top-toolbar');
 
-const mobileMenu = document.querySelector('.burger  ul');
+const mobileMenu = document.querySelector('.burger > div > ul');
 const mobileMenulinks = document.querySelectorAll('.menu-link');
 const logoPlaceHolder = document.querySelector('.logo-placeholder a');
 
