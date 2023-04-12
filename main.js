@@ -94,7 +94,7 @@ const toggleModel = () => {
   modelDiv.classList.toggle('hide');
   topToolbar.classList.toggle('hide');
   createBlurBackground();
-}
+};
 
 const createModel = () => {
   // codes to create model goes here
