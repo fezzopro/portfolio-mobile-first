@@ -196,7 +196,6 @@ document.addEventListener('DOMContentLoaded', () => {
     modeButtons[1].href = projectArray[project - 1].sourceLink;
     modeButtons[0].target = '_blank';
     modeButtons[1].target = '_blank';
-    
     // Display Model
     toggleModel();
   };
