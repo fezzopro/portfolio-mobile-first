@@ -207,4 +207,29 @@ document.addEventListener('DOMContentLoaded', () => {
   closeModel.addEventListener('click', toggleModel);
 
   // Project Details Model End
+
+  // Start validation to the form
+
+  const form = document.querySelector('.form');
+  const emailText = document.querySelector('input[name="email"]');
+
+  form.addEventListener('submit', (event) => {
+    if (emailText.value !== emailText.value.toLowerCase()) {
+      event.preventDefault();
+      console.log('clicked');
+
+      // Remove any previous error messages
+      const previousErrorMessage = form.querySelector('.error-message');
+      if (previousErrorMessage) {
+        form.removeChild(previousErrorMessage);
+      }
+
+      const errorMessage = document.createElement('span');
+      const formText = document.querySelector('.form textarea');
+      errorMessage.textContent = 'Invalid Email. Email should be all lower case.';
+      errorMessage.classList.add('error-message');
+      formText.insertAdjacentElement('afterend', errorMessage);
+    }
+  });
+  // End of validation form
 });

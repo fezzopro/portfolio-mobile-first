@@ -136,6 +136,21 @@ a:hover {
   width: 90%;
 }
 
+.error-message {
+  color: #9a333b;
+  background: #f8d7;
+  border: 1px solid #b37077;
+  border-radius: 8px;
+  padding: 8px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.submit-button {
+  margin-top: 1rem !important;
+}
+
 @media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
