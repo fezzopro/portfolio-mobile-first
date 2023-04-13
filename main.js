@@ -215,24 +215,24 @@ document.addEventListener('DOMContentLoaded', () => {
   // Project Details Model End
 
   // Populate form with local data
-
   const form = document.querySelector('.form');
   const names = document.querySelector('input[name="names"]');
   const emailText = document.querySelector('input[name="email"]');
   const message = document.querySelector('.form textarea');
 
-  
   const temporaryData = JSON.parse(localStorage.getItem('formData'));
-  names.value = (temporaryData.names.length > 0) ? temporaryData.names : '';
-  emailText.value = (temporaryData.emailText.length > 0) ? temporaryData.emailText : '';
-  message.value = (temporaryData.message.length > 0) ? temporaryData.message : '';
+  if (temporaryData) {
+    names.value = (temporaryData.names.length > 0) ? temporaryData.names : '';
+    emailText.value = (temporaryData.emailText.length > 0) ? temporaryData.emailText : '';
+    message.value = (temporaryData.message.length > 0) ? temporaryData.message : '';
+  }
 
   form.addEventListener('input', () => {
     const formData = {
-    names: names.value,
-    emailText: emailText.value,
-    message: message.value
-    }
+      names: names.value,
+      emailText: emailText.value,
+      message: message.value
+    };
     localStorage.setItem('formData', JSON.stringify(formData));
   });
 
@@ -252,7 +252,7 @@ document.addEventListener('DOMContentLoaded', () => {
       errorMessage.textContent = 'Invalid Email. Email should be all lower case.';
       errorMessage.classList.add('error-message');
       formText.insertAdjacentElement('afterend', errorMessage);
-    } 
+    }
   });
   // End of validation form
 });
