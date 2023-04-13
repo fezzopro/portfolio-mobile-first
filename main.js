@@ -1,6 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-
-
+document.addEventListener('DOMContentLoaded', () => {
   // Project object
 
   const projectArray = [
@@ -76,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cardTitle = document.createElement('h2');
     cardTitle.className = 'project-title';
     cardTitle.textContent = project.title;
-    leftBlock.appendChild(cardTitle)
+    leftBlock.appendChild(cardTitle);
     const cardProjectMetaUl = document.createElement('ul');
     cardProjectMetaUl.className = 'project-meta';
     const projectMetaLii = document.createElement('li');
@@ -87,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
     projectMetaLii.appendChild(projectMetaLiSpan);
 
     let counter = 1;
-    project.projectMeta.forEach(dataItem => {
+    project.projectMeta.forEach((dataItem) => {
       const projectMetaLi = document.createElement('li');
       if (counter === 1) {
         projectMetaLi.textContent = dataItem;
@@ -97,11 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
         projectMetaLi.textContent = dataItem;
       } else {
         projectMetaLi.className = 'role';
-        cardProjectMetaUl.appendChild(projectMetaLii);
         projectMetaLi.textContent = dataItem;
       }
       cardProjectMetaUl.appendChild(projectMetaLi);
-      counter++;
+      counter += 1;
     });
 
     leftBlock.appendChild(cardProjectMetaUl);
@@ -127,14 +124,14 @@ document.addEventListener("DOMContentLoaded", () => {
     cardButtonMoreDiv.appendChild(cardButtonMorespan);
     leftBlock.appendChild(cardStackUl);
     leftBlock.appendChild(cardButtonMoreDiv);
-    card.appendChild(leftBlock);;
+    card.appendChild(leftBlock);
     return card;
-  }
+  };
   const workSection = document.querySelector('.work');
 
   if (projectArray.length > 0) {
     projectArray.forEach((project) => {
-      workSection.appendChild(createProjectCard(project))
+      workSection.appendChild(createProjectCard(project));
     });
   }
 
@@ -199,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
     modeButtons[1].href = projectArray[project - 1].sourceLink;
     modeButtons[0].target = '_blank';
     modeButtons[1].target = '_blank';
-    console.log(project);
+    
     // Display Model
     toggleModel();
   };
