@@ -142,6 +142,9 @@ a:hover {
   border: 1px solid #b37077;
   border-radius: 8px;
   padding: 8px;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 17px;
 }
 
 .submit-button {
