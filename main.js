@@ -226,10 +226,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const errorMessage = document.createElement('span');
       const formText = document.querySelector('.form textarea');
-      errorMessage.textContent = 'Please enter your email in lower case.Your form is not submitted.';
+      errorMessage.textContent = 'Invalid Email. Email should be all lower case.';
       errorMessage.classList.add('error-message');
       formText.insertAdjacentElement('afterend', errorMessage);
-      
     }
   });
   // End of validation form
