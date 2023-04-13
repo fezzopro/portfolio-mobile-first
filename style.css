@@ -83,6 +83,59 @@ a:hover {
   font-family: sans-serif, "Poppins";
 }
 
+.models {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+  position: absolute;
+  z-index: 100;
+  opacity: 0.9;
+  background: #c1c7d0;
+}
+
+.model-project {
+  margin-top: 0 !important;
+  padding-top: 2rem;
+}
+
+.model-top h2 {
+  padding-left: 0;
+}
+
+.model-buttons {
+  gap: 1rem;
+  padding-left: 0 !important;
+}
+
+.model-buttons button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.model-buttons button > span > img {
+  padding: 5px 18px 0 6px;
+}
+
+.model-images {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  display: block;
+  border-top: 1px solid #ebecf0;
+}
+
+.model-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-image {
+  width: 90%;
+}
+
 @media only screen and (min-width: 375px) {
   .top-toolbar {
     height: 60px;
@@ -199,22 +252,6 @@ a:hover {
     padding: 16px 16px 0 16px;
   }
 
-  .work-1 img {
-    content: url('assets/images/project1.png');
-  }
-
-  .work-2 img {
-    content: url('assets/images/project2.png');
-  }
-
-  .work-3 img {
-    content: url('assets/images/project3.png');
-  }
-
-  .work-4 img {
-    content: url('assets/images/project4.png');
-  }
-
   .details {
     padding: 0 16px 12px 16px;
   }
@@ -272,7 +309,6 @@ a:hover {
     flex-direction: row;
     align-items: center;
     padding: inherit;
-    width: 203px;
     height: 24px;
     gap: 8px;
     list-style-type: none;
@@ -291,7 +327,6 @@ a:hover {
   }
 
   .more {
-    width: 295px;
     height: 72px;
     display: flex;
     align-items: center;
@@ -457,6 +492,23 @@ a:hover {
     line-height: 20px;
     padding-left: 16px;
   }
+
+  .model-buttons {
+    gap: 10px;
+    padding-right: 0;
+  }
+
+  .model-buttons > a > button {
+    padding: 0 6px;
+  }
+
+  .live-icon {
+    padding-right: 0 !important;
+  }
+
+  .model-image {
+    width: 90%;
+  }
 }
 
 @media only screen and (min-width: 425px) {
@@ -471,6 +523,10 @@ a:hover {
   .headline h1,
   .headline h2 {
     padding-top: 7.125rem;
+  }
+
+  .model-buttons {
+    gap: 1rem;
   }
 }
 
@@ -541,22 +597,6 @@ a:hover {
     padding: 20px 142px 180px 143px;
   }
 
-  .work-1 img {
-    content: url('assets/images/Svg/project1.svg');
-  }
-
-  .work-2 img {
-    content: url('assets/images/Svg/project2.svg');
-  }
-
-  .work-3 img {
-    content: url('assets/images/Svg/project3.svg');
-  }
-
-  .work-4 img {
-    content: url('assets/images/Svg/project4.svg');
-  }
-
   .work {
     padding: 0 8.875rem;
   }
@@ -596,6 +636,7 @@ a:hover {
     display: grid;
     grid-auto-flow: column;
     padding: 0 8px 0 0;
+    justify-content: flex-start;
   }
 
   .headline div {
@@ -621,6 +662,7 @@ a:hover {
   .languages ul ul li {
     flex-direction: column;
     width: 7.625rem;
+    height: auto;
   }
 
   .form {
@@ -635,6 +677,40 @@ a:hover {
   .form div {
     width: auto;
     align-items: center;
+  }
+
+  .model-project {
+    flex-direction: column;
+  }
+
+  .model-top,
+  .model-image-technologies,
+  .project-title {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .model-details {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    padding-bottom: 3rem;
+  }
+
+  .project-meta-model {
+    margin: 0;
+  }
+
+  .line {
+    padding: 0;
+  }
+
+  .model-buttons {
+    padding-top: 0;
+  }
+
+  .model-project-description {
+    width: 70%;
   }
 }
 
