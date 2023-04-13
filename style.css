@@ -117,7 +117,8 @@ a:hover {
 }
 
 .model-images {
-  display: contents;
+  display: flex;
+  justify-content: center;
 }
 
 .line {
@@ -129,6 +130,10 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+}
+
+.card-image {
+  width: 90%;
 }
 
 @media only screen and (min-width: 375px) {
@@ -247,22 +252,6 @@ a:hover {
     padding: 16px 16px 0 16px;
   }
 
-  .work-1 img {
-    content: url('assets/images/project1.png');
-  }
-
-  .work-2 img {
-    content: url('assets/images/project2.png');
-  }
-
-  .work-3 img {
-    content: url('assets/images/project3.png');
-  }
-
-  .work-4 img {
-    content: url('assets/images/project4.png');
-  }
-
   .details {
     padding: 0 16px 12px 16px;
   }
@@ -320,7 +309,6 @@ a:hover {
     flex-direction: row;
     align-items: center;
     padding: inherit;
-    width: 203px;
     height: 24px;
     gap: 8px;
     list-style-type: none;
@@ -609,22 +597,6 @@ a:hover {
     padding: 20px 142px 180px 143px;
   }
 
-  .work-1 img {
-    content: url('assets/images/Svg/project1.svg');
-  }
-
-  .work-2 img {
-    content: url('assets/images/Svg/project2.svg');
-  }
-
-  .work-3 img {
-    content: url('assets/images/Svg/project3.svg');
-  }
-
-  .work-4 img {
-    content: url('assets/images/Svg/project4.svg');
-  }
-
   .work {
     padding: 0 8.875rem;
   }
@@ -664,6 +636,7 @@ a:hover {
     display: grid;
     grid-auto-flow: column;
     padding: 0 8px 0 0;
+    justify-content: flex-start;
   }
 
   .headline div {
