@@ -60,6 +60,12 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
+  const localFormData = {
+    names: '',
+    email: '',
+    message: ''
+  };
+
   // Create Project Card
 
   const createProjectCard = (project) => {
@@ -208,15 +214,41 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Project Details Model End
 
-  // Start validation to the form
+  // Populate form with local data
+  const initializeLocalStorage = () => {
+    localStorage.names = '';
+    localStorage.email = '';
+    localStorage.message = '';
+  };
 
   const form = document.querySelector('.form');
+  const names = document.querySelector('input[name="names"]');
   const emailText = document.querySelector('input[name="email"]');
+  const message = document.querySelector('.form textarea');
 
+  if (localStorage.length <= 1) {
+    // Initialize Local Storage
+    initializeLocalStorage();
+  }
+
+  names.value = (localStorage.names.length > 0) ? localStorage.names : '';
+  emailText.value = (localStorage.email.length > 0) ? localStorage.email : '';
+  message.value = (localStorage.message.length > 0) ? localStorage.message : '';
+
+  names.addEventListener('change', () => {
+    localStorage.names = names.value;
+  });
+  emailText.addEventListener('change', () => {
+    localStorage.email = emailText.value;
+  });
+  message.addEventListener('change', () => {
+    localStorage.message = message.value;
+  });
+
+  // Start validation to the form
   form.addEventListener('submit', (event) => {
     if (emailText.value !== emailText.value.toLowerCase()) {
       event.preventDefault();
-      console.log('clicked');
 
       // Remove any previous error messages
       const previousErrorMessage = form.querySelector('.error-message');
@@ -229,6 +261,8 @@ document.addEventListener('DOMContentLoaded', () => {
       errorMessage.textContent = 'Invalid Email. Email should be all lower case.';
       errorMessage.classList.add('error-message');
       formText.insertAdjacentElement('afterend', errorMessage);
+    } else {
+      initializeLocalStorage();
     }
   });
   // End of validation form
