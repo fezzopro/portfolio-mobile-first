@@ -60,12 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   ];
 
-  const localFormData = {
-    names: '',
-    email: '',
-    message: ''
-  };
-
   // Create Project Card
 
   const createProjectCard = (project) => {
@@ -231,7 +225,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const formData = {
       names: names.value,
       emailText: emailText.value,
-      message: message.value
+      message: message.value,
     };
     localStorage.setItem('formData', JSON.stringify(formData));
   });
