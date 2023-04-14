@@ -208,15 +208,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Project Details Model End
 
-  // Start validation to the form
-
+  // Populate form with local data
   const form = document.querySelector('.form');
+  const names = document.querySelector('input[name="names"]');
   const emailText = document.querySelector('input[name="email"]');
+  const message = document.querySelector('.form textarea');
 
+  const temporaryData = JSON.parse(localStorage.getItem('formData'));
+  if (temporaryData) {
+    names.value = (temporaryData.names.length > 0) ? temporaryData.names : '';
+    emailText.value = (temporaryData.emailText.length > 0) ? temporaryData.emailText : '';
+    message.value = (temporaryData.message.length > 0) ? temporaryData.message : '';
+  }
+
+  form.addEventListener('input', () => {
+    const formData = {
+      names: names.value,
+      emailText: emailText.value,
+      message: message.value,
+    };
+    localStorage.setItem('formData', JSON.stringify(formData));
+  });
+
+  // Start validation to the form
   form.addEventListener('submit', (event) => {
     if (emailText.value !== emailText.value.toLowerCase()) {
       event.preventDefault();
-      console.log('clicked');
 
       // Remove any previous error messages
       const previousErrorMessage = form.querySelector('.error-message');
