@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         smallDevice: 'assets/images/to-do-list-phone.png',
         modelImage: 'assets/images/to-do-list-big-screen.png',
       },
-      projectDescription: "Stay on top of your busy schedule with TaskOrganizer, the online to-do list that combines the power of Webpack, JavaScript, HTML, CSS, and Bootstrap to bring you a seamless, efficient, and visually pleasing task management experience. Start using TaskOrganizer today and unlock the potential of productivity at your fingertips!",
+      projectDescription: 'Stay on top of your busy schedule with TaskOrganizer, the online to-do list that combines the power of Webpack, JavaScript, HTML, CSS, and Bootstrap to bring you a seamless, efficient, and visually pleasing task management experience. Start using TaskOrganizer today and unlock the potential of productivity at your fingertips!',
       projectStacks: ['webpack', 'html5', 'css', 'javascript'],
       liveLink: 'https://fezzopro.github.io/todo-list/dist/',
       sourceLink: 'https://github.com/fezzopro/todo-list',
@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const createModel = () => {
     // Crean the already existing stacks
     const stacks = document.querySelectorAll('.stack-li');
-    if (stacks.length > 0){
+    if (stacks.length > 0) {
       // remove clean stack list
       stacks.forEach((stack) => {
         document.querySelector('.model-technologies').removeChild(stack);
