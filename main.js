@@ -4,6 +4,20 @@ document.addEventListener('DOMContentLoaded', () => {
   const projectArray = [
     {
       id: 1,
+      title: 'To-Do List',
+      projectMeta: ['Microverse', 'Full Stack Dev', '2023'],
+      projectImage: {
+        desktop: 'assets/images/to-do-list-big-screen.png',
+        smallDevice: 'assets/images/to-do-list-phone.png',
+        modelImage: 'assets/images/to-do-list-big-screen.png',
+      },
+      projectDescription: 'Stay on top of your busy schedule with TaskOrganizer, the online to-do list that combines the power of Webpack, JavaScript, HTML, CSS, and Bootstrap to bring you a seamless, efficient, and visually pleasing task management experience. Start using TaskOrganizer today and unlock the potential of productivity at your fingertips!',
+      projectStacks: ['webpack', 'html5', 'css', 'javascript'],
+      liveLink: 'https://fezzopro.github.io/todo-list/dist/',
+      sourceLink: 'https://github.com/fezzopro/todo-list',
+    },
+    {
+      id: 2,
       title: 'Tonic',
       projectMeta: ['CANOPY', 'Back End Dev', '2015'],
       projectImage: {
@@ -17,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
     },
     {
-      id: 2,
+      id: 3,
       title: 'Multi-Post Stories',
       projectMeta: ['FACEBOOK', 'Back End Dev', '2015'],
       projectImage: {
@@ -31,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
     },
     {
-      id: 3,
+      id: 4,
       title: 'Facebook 360',
       projectMeta: ['FACEBOOK', 'Back End Dev', '2015'],
       projectImage: {
@@ -45,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       sourceLink: 'https://github.com/fezzopro/portfolio-mobile-first',
     },
     {
-      id: 4,
+      id: 5,
       title: 'Uber Navigation',
       projectMeta: ['Uber', 'Lead Developer', '2015'],
       projectImage: {
@@ -183,6 +197,14 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const createModel = () => {
+    // Crean the already existing stacks
+    const stacks = document.querySelectorAll('.stack-li');
+    if (stacks.length > 0) {
+      // remove clean stack list
+      stacks.forEach((stack) => {
+        document.querySelector('.model-technologies').removeChild(stack);
+      });
+    }
     // codes to create model goes here
     const project = document.activeElement.id.split('-')[1];
     const modelProjectTitle = document.querySelector('.model-project-header h2');
@@ -196,6 +218,15 @@ document.addEventListener('DOMContentLoaded', () => {
     modeButtons[1].href = projectArray[project - 1].sourceLink;
     modeButtons[0].target = '_blank';
     modeButtons[1].target = '_blank';
+
+    const stacksUl = document.querySelector('.model-technologies');
+    projectArray[project - 1].projectStacks.forEach((stack) => {
+      const li = document.createElement('li');
+      li.className = 'stack-li';
+      li.textContent = stack;
+      stacksUl.appendChild(li);
+    });
+
     // Display Model
     toggleModel();
   };

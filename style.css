@@ -3,6 +3,7 @@ body {
   font-family: sans-serif, "Poppins";
   position: relative;
   margin: 0;
+  min-width: fit-content; /* stylelint-disable-line */
 }
 
 a {
@@ -130,10 +131,6 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-}
-
-.card-image {
-  width: 90%;
 }
 
 .error-message {
@@ -747,6 +744,10 @@ a:hover {
   transform-origin: 1%;
   transition-duration: 0.2s;
   box-shadow: 0 4px 8px 0 rgb(168 167 167 / 56%), 0 6px 20px 0 rgb(255 255 255 / 19%);
+}
+
+.card-image {
+  height: 55vh;
 }
 
 .nav-elements ul li:hover {
